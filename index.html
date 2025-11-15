@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DYNAMIC FUSION CO., LTD.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="topbar">
+      <div class="contact-info">
+        <span>Address: #117B, St. 360, Phnom Penh</span>
+        <span>Phone: (855) 070 896 968</span>
+        <span>Email: dynamicfusionkh@gmail.com</span>
+      </div>
+    </div>
+    <nav class="navbar">
+      <img src="image2.png" alt="">
+      <div class="logo">DYNAMIC FUSION CO., LTD</div>
+      <div class="nav-overflow">
+        <button class="overflow-btn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">⋯</button>
+        <div class="overflow-menu" role="menu">
+          <button class="nav-btn" data-target="home">Home</button>
+          <button class="nav-btn" data-target="about">About</button>
+          <button class="nav-btn" data-target="project">Project</button>
+          <button class="nav-btn" data-target="team">Team</button>
+          <button class="nav-btn" data-target="contact">Contact</button>
+          <button class="nav-btn" data-target="reimbursement">Reimbursement</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+    <div class="hero">
+      <div class="hero-text">
+        <h1>We Energy Solar For The Best Service!</h1>
+        <p>We give you a complete solution of the energy & successful installation of the solar panel at your place.</p>
+        <div class="hero-buttons">
+          <button id="learnMoreBtn" class="btn-solid">Learn More</button>
+          <button id="getQuoteBtn" class="btn-outline">Get A Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section is-hidden">
+    <h2>OUR ABOUT</h2>
+    <h3>DYNAMIC FUSION CO.,LTD Solar Energy Development in Cambodia</h3>
+    <p>DMF specializes in solar photovoltaic power plant development with battery energy storage systems. Our mission is to deliver clean reliable energy across Cambodia</p>
+    <img src="image1.png" alt="">
+    <div class="about-cards">
+      <div class="card">
+        <h4>Industrial Solar</h4>
+        <p>30 MW Solar Plant approved under PPA (MARCH 2024), developed on 40 hectares in Kompong Chhnang</p>
+      </div>
+      <div class="card">
+        <h4>Energy and Usage</h4>
+        <p>Our system supports electricity generation, battery storage, and sustainable grid integration.</p>
+      </div>
+    </div>
+    <button class="btn-solid">ABOUT MORE</button>
+  </section>
+
+  <section id="project" class="section is-hidden">
+    <h2>PROJECT INFORMATION</h2>
+    <ul>
+      <li><strong>Project:</strong> 30 MW Solar Photovoltaic Power Plant with Battery Energy Storage System</li>
+      <li><strong>Approval:</strong> PPA signed in March 2024</li>
+      <li><strong>Site:</strong> 40 hectares in Kampong Chhnang</li>
+      <li><strong>Location:</strong> Prey Chrov village, Teuk Phos district</li>
+      <li><strong>Coordinates:</strong> 11.807055°, 104.350509°</li>
+      <li><strong>Study:</strong> Climate, topography, sun ray</li>
+      <li><strong>Equipment:</strong> Supplied by experienced foreign companies</li>
+    </ul>
+    <img src="image1.png" alt="">
+  </section>
+
+  <section id="team" class="section is-hidden">
+    <h2>PROJECT SUSTAINABILITY & TEAM</h2>
+    <ul>
+      <li><strong>Local Partnership:</strong> DMF works closely with a local expert company to build the solar power plant.</li>
+      <li><strong>Team Expertise:</strong> Skilled engineers and technicians with many years of experience in solar plant construction.</li>
+      <li><strong>Goal:</strong> Ensure smooth and timely implementation through collaboration and technical excellence.</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section is-hidden">
+    <h2>CONTACT US</h2>
+    <p>Email: dynamicfusionkh@gmail.com</p>
+    <p>Phone: (855) 070 896 968</p>
+    <p>Address: #118, St. 360, Boeng Keng Kang III, Phnom Penh</p>
+  </section>
+  <section id="reimbursement" class="section is-hidden">
+    <h2>Staff Reimbursement Form</h2>
+    <form id="reimbursementForm">
+      <label>Staff Name:</label>
+      <input type="text" id="staffName" required />
+
+      <label>Date of Expense:</label>
+      <input type="date" id="expenseDate" required />
+
+      <label>Description:</label>
+      <input type="text" id="description" required />
+
+      <label>Amount (USD):</label>
+      <input type="number" id="amount" required />
+
+      <button type="submit" class="btn-solid">Submit</button>
+    </form>
+
+    <h3>Submitted Records</h3>
+    <table id="recordsTable">
+      <thead>
+        <tr>
+          <th>Staff Name</th>
+          <th>Date</th>
+          <th>Description</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 DYNAMIC FUSION CO., LTD. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

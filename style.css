@@ -1,0 +1,276 @@
+/* Base styles (Desktop/Large screen) */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  .topbar {
+    background: #47b17c;
+    color: white;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px;
+  }
+  
+  .navbar img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2e7d32;
+  }
+  
+  .nav-overflow {
+    position: relative;
+  }
+  
+  .overflow-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #2e7d32;
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .overflow-menu {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 180px;
+    z-index: 1000;
+  }
+  
+  .overflow-menu.is-open {
+    display: flex;
+  }
+  
+  .overflow-menu .nav-btn {
+    background: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #2e7d32;
+  }
+  
+  .overflow-menu .nav-btn:hover {
+    background: rgba(46, 125, 50, 0.1);
+  }
+  
+  /* Hero section */
+  .hero {
+    background: url('image.png') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 700px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .hero-buttons .btn-solid,
+  .hero-buttons .btn-outline {
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-solid {
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 5vh;
+  }
+  
+  .btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+  }
+  
+  /* Section */
+  .section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about-cards {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+  }
+  
+  .is-hidden {
+    display: none;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 1rem;
+    background: #c8e6c9;
+    color: #2e7d32;
+    width: 100%;
+  }
+  
+  /* Reimbursement form */
+  #reimbursementForm {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+  }
+  
+  #reimbursementForm input {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #recordsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #recordsTable th, #recordsTable td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  /* 🌍 Responsive Breakpoints */
+  
+  /* Tablets (portrait & landscape) */
+  @media (max-width: 1024px) {
+    .hero {
+      height: 60vh;
+    }
+    .hero-text h1 {
+      font-size: 1.6rem;
+    }
+    .hero-text p {
+      font-size: 1rem;
+    }
+    .about-cards {
+      flex-direction: column;
+    }
+  }
+  
+  /* Phones (portrait) */
+  @media (max-width: 768px) {
+    .topbar {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+    .navbar {
+      flex-direction: row;
+      font-size: 1rem;
+    }
+    .navbar img {
+      height: 40px;
+    }
+    .logo {
+      font-size: 1rem;
+    }
+    .overflow-menu {
+      min-width: 100%;
+    }
+    .hero {
+      height: 50vh;
+    }
+    .hero-text {
+      padding: 1rem;
+      font-size: 0.9rem;
+      max-width: 95%;
+    }
+    .hero-text h1 {
+      font-size: 1.2rem;
+    }
+    .hero-buttons {
+      flex-direction: column;
+    }
+    .hero-buttons .btn-solid,
+    .hero-buttons .btn-outline {
+      width: 100%;
+    }
+    #recordsTable {
+      font-size: 0.8rem;
+      display: block;
+      overflow-x: auto;
+    }
+  }
+  
+  /* Small phones (<=480px) */
+  @media (max-width: 480px) {
+    .hero-text h1 {
+      font-size: 1rem;
+    }
+    .hero-text p {
+      font-size: 0.8rem;
+    }
+    .card {
+      font-size: 0.9rem;
+    }
+  }
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
